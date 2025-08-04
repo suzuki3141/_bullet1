@@ -1,0 +1,858 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>使い方</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <style>
+            body{
+                background-color: #1F005C;
+            }
+            #header{
+                background-color: #ffffff;
+                height: 80px;
+                width: 100%;
+            }
+            .h1-1{
+                font-size: 50px;
+                text-align: center;
+            }
+            #link{
+                margin-top: 10px;
+                color: #FFFFFF;
+                font-size: 20px;
+            }
+            #link2{
+                display: flex;
+                flex-direction: column;
+            }
+            .link{
+                padding-left: 10px;
+                padding-right: 10px;
+            }
+            .sousahouhou{
+                padding-left: 10px;
+                padding-right: 5px;
+            }
+            #text4{
+                color: #838383;
+                display: none;
+            }
+            .white{
+                color: #FFFFFF;
+            }
+            #kimekotoba{
+                color: #ffe033;
+                margin-top: 10px;
+                text-align: center;
+                font-size: 25px;
+                font-style: italic;
+            }
+        </style>
+        <header id="header">
+            <h1 class="h1-1">弾幕耐久 第一弾</h1>
+        </header>
+        <div id="link">
+            <table border="1"><td>
+            <h2 class="white link">リンク</h1>
+            </td><td id="link2">
+            <a href="#g0" class="link">概要</a>
+            <a href="#g1" class="link">1.実行方法</a>
+            <a href="#g2" class="link">2.操作方法</a>
+            <a href="#g3" class="link">3.システム</a>
+            <a href="#g4" class="link">4.ライセンス表記</a>
+            </td></table>
+        </div>
+        <div id="g0">
+            <h2 class="white">概要</h2>
+            <p class="white">当作品は東方永夜抄を元にした東方Projectの二次創作です。<br>当作品は60秒間の1枚のスペルカードを耐久するシステムとなっております。<br>弾幕は被弾すると即終了！60秒しか遊べないゲームとはなっておりますが緊張を味わっていただけると思います。<br>まだ作者も拙いものなのでボリュームも少なくシステム面でも不自由があるとは思いますが楽しんでいただけると幸いです。</p><p id="kimekotoba" class="white">明けない夜に輝く美しい弾幕を見よ！</p><p class="white">原作：上海アリス幻樂団　東方永夜抄</p><a class="white" href="https://www16.big.or.jp/~zun/html/th08top.html">永夜抄ページ</a>
+        </div>
+        <div id="g1">
+            <h2 class="white">1.実行方法</h2>
+            <p class="white">html版：キーボードのある端末にて、javascriptが動作するブラウザで開き、そしてブラウザで倍率を画面に合うように調整してください。その後の操作は画面に従ってください。</p>
+            <p class="white">ソフト版：キーボードのあるwindowsの端末にてフォルダ内の「弾幕耐久第一弾.exe」をダブルクリックすると実行できます。そして実行したら、左上の「View」から「Zoom In」と「Zoom Out」で倍率を調整してください。その後の操作は画面の指示に従ってください。</p>
+        </div>
+        <div id="g2">
+            <h2 class="white">2.操作方法</h2>
+            <table border="1" class="white">
+                <tr>
+                    <td><p class="white sousahouhou">移動</p></td>
+                    <td><p class="white sousahouhou">矢印キー</p></td>
+                </tr>
+                <tr>
+                    <td><p class="white sousahouhou">低速移動</p></td>
+                    <td><p class="white sousahouhou">Shiftキー（押している間）</p></td>
+                </tr>
+                <tr>
+                    <td><p class="white sousahouhou">選択・決定</p></td>
+                    <td><p class="white sousahouhou">ゲームスタート：Xキー<br>曲の有無：1,2キー<br>ゲームオーバー後の選択：1,2キー</p></td>
+                </tr>
+                <tr>
+                    <td><p class="white sousahouhou">エンドロール早送り</p></td>
+                    <td><p class="white sousahouhou">Ctrlキー</p></td>
+                </tr>
+            </table>            
+            <p class="white">なお、ショットとボムはそもそもありません。</p>
+        </div>
+        <div id="g3">
+            <h2 class="white">3.システム</h2>
+            <p class="white">ゲームシステムについて<br>60秒間の耐久スペルカードに挑戦してもらい、避けきればクリア、一度でも被弾したらゲームオーバーです。簡単に言うと、ラストワードと同じです。<br>自機は西行寺幽々子さん、敵機は永夜抄EXボス藤原妹紅さんです。<br>スペルカードは永夜抄の様々な弾幕をモチーフにした弾幕をふんだんに盛り込んでありますので、ぜひとも参考にした弾幕も特定してみてください！</p>
+        </div>
+        <div id="g4">
+            <h2 class="white">4.ライセンス表記</h2>
+            <script>
+                function text4(){
+                    let a = document.getElementById("text4");
+                    let b = document.getElementById("bt4");
+                    if(a.style.display == "none"){
+                        a.style.display = "block";
+                        b.textContent = "ライセンス表記を非表示にする"
+                    }
+                    else{
+                        a.style.display = "none";
+                        b.textContent = "ライセンス表記を表示する"
+                    }
+                }
+            </script>
+            <button onclick="text4()" id="bt4">ライセンス表記を表示する</button>
+            <p id="text4">このソフトにはMITライセンスを適用します。
+また、製作者は当ソフトやコンピューターによって発生した不具合に対して一切保証せず、責任を負いません。
+ⓒ2025,Kanaki<br>
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+<br>
+
+以下より用いたサービスなどのライセンス表記です。
+<br>
+
+当作品は東方Projectの二次創作作品です。<br>
+また、二次創作ガイドラインに則って当ゲームが製作されています。<br>
+東方Project製作者：上海アリス幻樂団、ZUN様<br>
+ガイドライン：https://touhou-project.news/guideline/<br>
+上海アリス幻樂団：https://www16.big.or.jp/~zun/
+<br>
+当作品はNode.jsによってソフト化されています。
+Node.jsにはMITライセンスが適用されており、ライセンスに則って当ゲームの製作に利用しました。
+Node.js：https://nodejs.org/ja
+<br>
+当作品はElectronによってソフト化されています。
+ElectronにはMITライセンスが適用されており、ライセンスに則って当ゲームの製作に利用しました。
+Electron：https://www.electronjs.org/ja/
+<br>
+これに加え、ElectronのライブラリとしてElectron forgeも用いています。
+そして、Electron forgeも同様にMITライセンスです。
+Electron forge：https://github.com/electron/forge/tree/main
+<br>
+また、Electronの利用によりchromiumが用いられており、こちらはBSDライセンスが適用されています。
+chromium：https://www.chromium.org/chromium-projects/
+<br>
+そして、これらを用いてソフトにするためのライブラリとして以下を使いました。
+おそらく上の内容と重複している部分が一部ありますがご容赦ください。
+"名前","ライセンスの種類","リンク"の形式で列挙させていただきます。
+"@electron-forge/cli@7.8.1","MIT","https://github.com/electron/forge"
+"@electron-forge/core-utils@7.8.1","MIT","https://github.com/electron/forge"
+"@electron-forge/core@7.8.1","MIT","https://github.com/electron/forge"
+"@electron-forge/maker-base@7.8.1","MIT","https://github.com/electron/forge"
+"@electron-forge/maker-deb@7.8.1","MIT","https://github.com/electron/forge"
+"@electron-forge/maker-rpm@7.8.1","MIT","https://github.com/electron/forge"
+"@electron-forge/maker-squirrel@7.8.1","MIT","https://github.com/electron/forge"
+"@electron-forge/maker-zip@7.8.1","MIT","https://github.com/electron/forge"
+"@electron-forge/plugin-auto-unpack-natives@7.8.1","MIT","https://github.com/electron/forge"
+"@electron-forge/plugin-base@7.8.1","MIT","https://github.com/electron/forge"
+"@electron-forge/plugin-fuses@7.8.1","MIT","https://github.com/electron/forge"
+"@electron-forge/publisher-base@7.8.1","MIT","https://github.com/electron/forge"
+"@electron-forge/shared-types@7.8.1","MIT","https://github.com/electron/forge"
+"@electron-forge/template-base@7.8.1","MIT","https://github.com/electron/forge"
+"@electron-forge/template-vite-typescript@7.8.1","MIT","https://github.com/electron/forge"
+"@electron-forge/template-vite@7.8.1","MIT","https://github.com/electron/forge"
+"@electron-forge/template-webpack-typescript@7.8.1","MIT","https://github.com/electron/forge"
+"@electron-forge/template-webpack@7.8.1","MIT","https://github.com/electron/forge"
+"@electron-forge/tracer@7.8.1","MIT","https://github.com/electron/forge"
+"@electron/asar@3.4.1","MIT","https://github.com/electron/asar"
+"@electron/fuses@1.8.0","MIT","https://github.com/electron/fuses"
+"@electron/get@2.0.3","MIT","https://github.com/electron/get"
+"@electron/get@3.1.0","MIT","https://github.com/electron/get"
+"@electron/node-gyp@10.2.0-electron.1","MIT","https://github.com/nodejs/node-gyp"
+"@electron/notarize@2.5.0","MIT","https://github.com/electron/notarize"
+"@electron/osx-sign@1.3.3","BSD-2-Clause","https://github.com/electron/osx-sign"
+"@electron/packager@18.3.6","BSD-2-Clause","https://github.com/electron/packager"
+"@electron/rebuild@3.7.2","MIT","https://github.com/electron/rebuild"
+"@electron/universal@2.0.3","MIT","https://github.com/electron/universal"
+"@electron/windows-sign@1.2.2","BSD-2-Clause","https://github.com/electron/windows-sign"
+"@gar/promisify@1.1.3","MIT","https://github.com/wraithgar/gar-promisify"
+"@malept/cross-spawn-promise@1.1.1","Apache-2.0","https://github.com/malept/cross-spawn-promise"
+"@malept/cross-spawn-promise@2.0.0","Apache-2.0","https://github.com/malept/cross-spawn-promise"
+"@nodelib/fs.scandir@2.1.5","MIT","https://github.com/nodelib/nodelib/tree/master/packages/fs/fs.scandir"
+"@nodelib/fs.stat@2.0.5","MIT","https://github.com/nodelib/nodelib/tree/master/packages/fs/fs.stat"
+"@nodelib/fs.walk@1.2.8","MIT","https://github.com/nodelib/nodelib/tree/master/packages/fs/fs.walk"
+"@npmcli/fs@2.1.2","ISC","https://github.com/npm/fs"
+"@npmcli/move-file@2.0.1","MIT","https://github.com/npm/move-file"
+"@sindresorhus/is@4.6.0","MIT","https://github.com/sindresorhus/is"
+"@szmarczak/http-timer@4.0.6","MIT","https://github.com/szmarczak/http-timer"
+"@tootallnate/once@2.0.0","MIT","https://github.com/TooTallNate/once"
+"@types/cacheable-request@6.0.3","MIT","https://github.com/DefinitelyTyped/DefinitelyTyped"
+"@types/fs-extra@9.0.13","MIT","https://github.com/DefinitelyTyped/DefinitelyTyped"
+"@types/http-cache-semantics@4.0.4","MIT","https://github.com/DefinitelyTyped/DefinitelyTyped"
+"@types/keyv@3.1.4","MIT","https://github.com/DefinitelyTyped/DefinitelyTyped"
+"@types/node@22.16.0","MIT","https://github.com/DefinitelyTyped/DefinitelyTyped"
+"@types/responselike@1.0.3","MIT","https://github.com/DefinitelyTyped/DefinitelyTyped"
+"@types/yauzl@2.10.3","MIT","https://github.com/DefinitelyTyped/DefinitelyTyped"
+"@xmldom/xmldom@0.8.10","MIT","https://github.com/xmldom/xmldom"
+"abbrev@1.1.1","ISC","https://github.com/isaacs/abbrev-js"
+"agent-base@6.0.2","MIT","https://github.com/TooTallNate/node-agent-base"
+"agentkeepalive@4.6.0","MIT","https://github.com/node-modules/agentkeepalive"
+"aggregate-error@3.1.0","MIT","https://github.com/sindresorhus/aggregate-error"
+"ansi-escapes@5.0.0","MIT","https://github.com/sindresorhus/ansi-escapes"
+"ansi-regex@5.0.1","MIT","https://github.com/chalk/ansi-regex"
+"ansi-regex@6.1.0","MIT","https://github.com/chalk/ansi-regex"
+"ansi-styles@3.2.1","MIT","https://github.com/chalk/ansi-styles"
+"ansi-styles@4.3.0","MIT","https://github.com/chalk/ansi-styles"
+"ansi-styles@6.2.1","MIT","https://github.com/chalk/ansi-styles"
+"array-find-index@1.0.2","MIT","https://github.com/sindresorhus/array-find-index"
+"asap@2.0.6","MIT","https://github.com/kriskowal/asap"
+"at-least-node@1.0.0","ISC","https://github.com/RyanZim/at-least-node"
+"author-regex@1.0.0","MIT","https://github.com/jonschlinkert/author-regex"
+"balanced-match@1.0.2","MIT","https://github.com/juliangruber/balanced-match"
+"base64-js@1.5.1","MIT","https://github.com/beatgammit/base64-js"
+"bl@4.1.0","MIT","https://github.com/rvagg/bl"
+"bluebird@3.7.2","MIT","https://github.com/petkaantonov/bluebird"
+"boolean@3.2.0","MIT","https://github.com/thenativeweb/boolean"
+"brace-expansion@1.1.12","MIT","https://github.com/juliangruber/brace-expansion"
+"brace-expansion@2.0.2","MIT","https://github.com/juliangruber/brace-expansion"
+"braces@3.0.3","MIT","https://github.com/micromatch/braces"
+"buffer-crc32@0.2.13","MIT","https://github.com/brianloveswords/buffer-crc32"
+"buffer-from@1.1.2","MIT","https://github.com/LinusU/buffer-from"
+"buffer@5.7.1","MIT","https://github.com/feross/buffer"
+"cacache@16.1.3","ISC","https://github.com/npm/cacache"
+"cacheable-lookup@5.0.4","MIT","https://github.com/szmarczak/cacheable-lookup"
+"cacheable-request@7.0.4","MIT","https://github.com/lukechilds/cacheable-request"
+"chalk@2.4.2","MIT","https://github.com/chalk/chalk"
+"chalk@4.1.2","MIT","https://github.com/chalk/chalk"
+"chownr@2.0.0","ISC","https://github.com/isaacs/chownr"
+"chrome-trace-event@1.0.4","MIT","https://github.com/samccone/chrome-trace-event"
+"clean-stack@2.2.0","MIT","https://github.com/sindresorhus/clean-stack"
+"cli-cursor@3.1.0","MIT","https://github.com/sindresorhus/cli-cursor"
+"cli-cursor@4.0.0","MIT","https://github.com/sindresorhus/cli-cursor"
+"cli-spinners@2.9.2","MIT","https://github.com/sindresorhus/cli-spinners"
+"cli-truncate@3.1.0","MIT","https://github.com/sindresorhus/cli-truncate"
+"cliui@8.0.1","ISC","https://github.com/yargs/cliui"
+"clone-response@1.0.3","MIT","https://github.com/sindresorhus/clone-response"
+"clone@1.0.4","MIT","https://github.com/pvorb/node-clone"
+"color-convert@1.9.3","MIT","https://github.com/Qix-/color-convert"
+"color-convert@2.0.1","MIT","https://github.com/Qix-/color-convert"
+"color-name@1.1.3","MIT","https://github.com/dfcreative/color-name"
+"color-name@1.1.4","MIT","https://github.com/colorjs/color-name"
+"colorette@2.0.20","MIT","https://github.com/jorgebucaran/colorette"
+"commander@11.1.0","MIT","https://github.com/tj/commander.js"
+"commander@5.1.0","MIT","https://github.com/tj/commander.js"
+"commander@9.5.0","MIT","https://github.com/tj/commander.js"
+"compare-version@0.1.2","MIT","https://github.com/kevva/compare-version"
+"concat-map@0.0.1","MIT","https://github.com/substack/node-concat-map"
+"cross-dirname@0.1.0","MIT","https://github.com/JumpLink/cross-dirname"
+"cross-spawn@6.0.6","MIT","https://github.com/moxystudio/node-cross-spawn"
+"cross-spawn@7.0.6","MIT","https://github.com/moxystudio/node-cross-spawn"
+"cross-zip@4.0.1","MIT","https://github.com/feross/cross-zip"
+"debug@2.6.9","MIT","https://github.com/visionmedia/debug"
+"debug@3.2.7","MIT","https://github.com/visionmedia/debug"
+"debug@4.4.1","MIT","https://github.com/debug-js/debug"
+"debuglog@1.0.1","MIT","https://github.com/sam-github/node-debuglog"
+"decompress-response@6.0.0","MIT","https://github.com/sindresorhus/decompress-response"
+"defaults@1.0.4","MIT","https://github.com/sindresorhus/node-defaults"
+"defer-to-connect@2.0.1","MIT","https://github.com/szmarczak/defer-to-connect"
+"define-data-property@1.1.4","MIT","https://github.com/ljharb/define-data-property"
+"define-properties@1.2.1","MIT","https://github.com/ljharb/define-properties"
+"detect-libc@2.0.4","Apache-2.0","https://github.com/lovell/detect-libc"
+"detect-node@2.1.0","MIT","https://github.com/iliakan/detect-node"
+"dezalgo@1.0.4","ISC","https://github.com/npm/dezalgo"
+"dir-compare@4.2.0","MIT","https://github.com/gliviu/dir-compare"
+"eastasianwidth@0.2.0","MIT","https://github.com/komagata/eastasianwidth"
+"electron-installer-common@0.10.4","Apache-2.0","https://github.com/electron-userland/electron-installer-common"
+"electron-squirrel-startup@1.0.1","Apache-2.0","https://github.com/mongodb-js/electron-squirrel-startup"
+"electron-winstaller@5.4.0","MIT","https://github.com/electron/windows-installer"
+"electron@37.2.0","MIT","https://github.com/electron/electron"
+"emoji-regex@8.0.0","MIT","https://github.com/mathiasbynens/emoji-regex"
+"emoji-regex@9.2.2","MIT","https://github.com/mathiasbynens/emoji-regex"
+"encoding@0.1.13","MIT","https://github.com/andris9/encoding"
+"end-of-stream@1.4.5","MIT","https://github.com/mafintosh/end-of-stream"
+"env-paths@2.2.1","MIT","https://github.com/sindresorhus/env-paths"
+"err-code@2.0.3","MIT","https://github.com/IndigoUnited/js-err-code"
+"error-ex@1.3.2","MIT","https://github.com/qix-/node-error-ex"
+"es-define-property@1.0.1","MIT","https://github.com/ljharb/es-define-property"
+"es-errors@1.3.0","MIT","https://github.com/ljharb/es-errors"
+"es6-error@4.1.1","MIT","https://github.com/bjyoungblood/es6-error"
+"escalade@3.2.0","MIT","https://github.com/lukeed/escalade"
+"escape-string-regexp@1.0.5","MIT","https://github.com/sindresorhus/escape-string-regexp"
+"escape-string-regexp@4.0.0","MIT","https://github.com/sindresorhus/escape-string-regexp"
+"eventemitter3@5.0.1","MIT","https://github.com/primus/eventemitter3"
+"execa@1.0.0","MIT","https://github.com/sindresorhus/execa"
+"exponential-backoff@3.1.2","Apache-2.0","https://github.com/coveooss/exponential-backoff"
+"extract-zip@2.0.1","BSD-2-Clause","https://github.com/maxogden/extract-zip"
+"fast-glob@3.3.3","MIT","https://github.com/mrmlnc/fast-glob"
+"fastq@1.19.1","ISC","https://github.com/mcollina/fastq"
+"fd-slicer@1.1.0","MIT","https://github.com/andrewrk/node-fd-slicer"
+"filename-reserved-regex@2.0.0","MIT","https://github.com/sindresorhus/filename-reserved-regex"
+"filenamify@4.3.0","MIT","https://github.com/sindresorhus/filenamify"
+"fill-range@7.1.1","MIT","https://github.com/jonschlinkert/fill-range"
+"find-up@2.1.0","MIT","https://github.com/sindresorhus/find-up"
+"find-up@5.0.0","MIT","https://github.com/sindresorhus/find-up"
+"flora-colossus@2.0.0","MIT","https://github.com/MarshallOfSound/flora-colossus"
+"fs-extra@10.1.0","MIT","https://github.com/jprichardson/node-fs-extra"
+"fs-extra@11.3.0","MIT","https://github.com/jprichardson/node-fs-extra"
+"fs-extra@7.0.1","MIT","https://github.com/jprichardson/node-fs-extra"
+"fs-extra@8.1.0","MIT","https://github.com/jprichardson/node-fs-extra"
+"fs-extra@9.1.0","MIT","https://github.com/jprichardson/node-fs-extra"
+"fs-minipass@2.1.0","ISC","https://github.com/npm/fs-minipass"
+"fs.realpath@1.0.0","ISC","https://github.com/isaacs/fs.realpath"
+"function-bind@1.1.2","MIT","https://github.com/Raynos/function-bind"
+"galactus@1.0.0","MIT","https://github.com/marshallOfSound/galactus"
+"get-caller-file@2.0.5","ISC","https://github.com/stefanpenner/get-caller-file"
+"get-package-info@1.0.0","MIT","https://github.com/rahatarmanahmed/get-package-info"
+"get-stream@4.1.0","MIT","https://github.com/sindresorhus/get-stream"
+"get-stream@5.2.0","MIT","https://github.com/sindresorhus/get-stream"
+"glob-parent@5.1.2","ISC","https://github.com/gulpjs/glob-parent"
+"glob@7.2.3","ISC","https://github.com/isaacs/node-glob"
+"glob@8.1.0","ISC","https://github.com/isaacs/node-glob"
+"global-agent@3.0.0","BSD-3-Clause","https://github.com/gajus/global-agent"
+"global-dirs@3.0.1","MIT","https://github.com/sindresorhus/global-dirs"
+"globalthis@1.0.4","MIT","https://github.com/ljharb/System.global"
+"gopd@1.2.0","MIT","https://github.com/ljharb/gopd"
+"got@11.8.6","MIT","https://github.com/sindresorhus/got"
+"graceful-fs@4.2.11","ISC","https://github.com/isaacs/node-graceful-fs"
+"has-flag@3.0.0","MIT","https://github.com/sindresorhus/has-flag"
+"has-flag@4.0.0","MIT","https://github.com/sindresorhus/has-flag"
+"has-property-descriptors@1.0.2","MIT","https://github.com/inspect-js/has-property-descriptors"
+"hasown@2.0.2","MIT","https://github.com/inspect-js/hasOwn"
+"hosted-git-info@2.8.9","ISC","https://github.com/npm/hosted-git-info"
+"http-cache-semantics@4.2.0","BSD-2-Clause","https://github.com/kornelski/http-cache-semantics"
+"http-proxy-agent@5.0.0","MIT","https://github.com/TooTallNate/node-http-proxy-agent"
+"http2-wrapper@1.0.3","MIT","https://github.com/szmarczak/http2-wrapper"
+"https-proxy-agent@5.0.1","MIT","https://github.com/TooTallNate/node-https-proxy-agent"
+"humanize-ms@1.2.1","MIT","https://github.com/node-modules/humanize-ms"
+"iconv-lite@0.6.3","MIT","https://github.com/ashtuchkin/iconv-lite"
+"ieee754@1.2.1","BSD-3-Clause","https://github.com/feross/ieee754"
+"imurmurhash@0.1.4","MIT","https://github.com/jensyt/imurmurhash-js"
+"indent-string@4.0.0","MIT","https://github.com/sindresorhus/indent-string"
+"infer-owner@1.0.4","ISC","https://github.com/npm/infer-owner"
+"inflight@1.0.6","ISC","https://github.com/npm/inflight"
+"inherits@2.0.4","ISC","https://github.com/isaacs/inherits"
+"ini@2.0.0","ISC","https://github.com/isaacs/ini"
+"interpret@3.1.1","MIT","https://github.com/gulpjs/interpret"
+"ip-address@9.0.5","MIT","https://github.com/beaugunderson/ip-address"
+"is-arrayish@0.2.1","MIT","https://github.com/qix-/node-is-arrayish"
+"is-core-module@2.16.1","MIT","https://github.com/inspect-js/is-core-module"
+"is-extglob@2.1.1","MIT","https://github.com/jonschlinkert/is-extglob"
+"is-fullwidth-code-point@3.0.0","MIT","https://github.com/sindresorhus/is-fullwidth-code-point"
+"is-fullwidth-code-point@4.0.0","MIT","https://github.com/sindresorhus/is-fullwidth-code-point"
+"is-glob@4.0.3","MIT","https://github.com/micromatch/is-glob"
+"is-interactive@1.0.0","MIT","https://github.com/sindresorhus/is-interactive"
+"is-lambda@1.0.1","MIT","https://github.com/watson/is-lambda"
+"is-number@7.0.0","MIT","https://github.com/jonschlinkert/is-number"
+"is-stream@1.1.0","MIT","https://github.com/sindresorhus/is-stream"
+"is-unicode-supported@0.1.0","MIT","https://github.com/sindresorhus/is-unicode-supported"
+"isbinaryfile@4.0.10","MIT","https://github.com/gjtorikian/isBinaryFile"
+"isexe@2.0.0","ISC","https://github.com/isaacs/isexe"
+"jiti@2.4.2","MIT","https://github.com/unjs/jiti"
+"jsbn@1.1.0","MIT","https://github.com/andyperlitch/jsbn"
+"json-buffer@3.0.1","MIT","https://github.com/dominictarr/json-buffer"
+"json-parse-even-better-errors@2.3.1","MIT","https://github.com/npm/json-parse-even-better-errors"
+"json-stringify-safe@5.0.1","ISC","https://github.com/isaacs/json-stringify-safe"
+"jsonfile@4.0.0","MIT","https://github.com/jprichardson/node-jsonfile"
+"jsonfile@6.1.0","MIT","https://github.com/jprichardson/node-jsonfile"
+"junk@3.1.0","MIT","https://github.com/sindresorhus/junk"
+"keyv@4.5.4","MIT","https://github.com/jaredwray/keyv"
+"license-checker@25.0.1","BSD-3-Clause","https://github.com/davglass/license-checker"
+"listr2@7.0.2","MIT","https://github.com/listr2/listr2"
+"load-json-file@2.0.0","MIT","https://github.com/sindresorhus/load-json-file"
+"locate-path@2.0.0","MIT","https://github.com/sindresorhus/locate-path"
+"locate-path@6.0.0","MIT","https://github.com/sindresorhus/locate-path"
+"lodash.get@4.4.2","MIT","https://github.com/lodash/lodash"
+"lodash@4.17.21","MIT","https://github.com/lodash/lodash"
+"log-symbols@4.1.0","MIT","https://github.com/sindresorhus/log-symbols"
+"log-update@5.0.1","MIT","https://github.com/sindresorhus/log-update"
+"lowercase-keys@2.0.0","MIT","https://github.com/sindresorhus/lowercase-keys"
+"lru-cache@7.18.3","ISC","https://github.com/isaacs/node-lru-cache"
+"main@1.0.0","MIT",""
+"make-fetch-happen@10.2.1","ISC","https://github.com/npm/make-fetch-happen"
+"map-age-cleaner@0.1.3","MIT","https://github.com/SamVerschueren/map-age-cleaner"
+"matcher@3.0.0","MIT","https://github.com/sindresorhus/matcher"
+"mem@4.3.0","MIT","https://github.com/sindresorhus/mem"
+"merge2@1.4.1","MIT","https://github.com/teambition/merge2"
+"micromatch@4.0.8","MIT","https://github.com/micromatch/micromatch"
+"mimic-fn@2.1.0","MIT","https://github.com/sindresorhus/mimic-fn"
+"mimic-response@1.0.1","MIT","https://github.com/sindresorhus/mimic-response"
+"mimic-response@3.1.0","MIT","https://github.com/sindresorhus/mimic-response"
+"minimatch@3.1.2","ISC","https://github.com/isaacs/minimatch"
+"minimatch@5.1.6","ISC","https://github.com/isaacs/minimatch"
+"minimatch@9.0.5","ISC","https://github.com/isaacs/minimatch"
+"minimist@1.2.8","MIT","https://github.com/minimistjs/minimist"
+"minipass-collect@1.0.2","ISC",""
+"minipass-fetch@2.1.2","MIT","https://github.com/npm/minipass-fetch"
+"minipass-flush@1.0.5","ISC","https://github.com/isaacs/minipass-flush"
+"minipass-pipeline@1.2.4","ISC",""
+"minipass-sized@1.0.3","ISC","https://github.com/isaacs/minipass-sized"
+"minipass@3.3.6","ISC","https://github.com/isaacs/minipass"
+"minipass@5.0.0","ISC","https://github.com/isaacs/minipass"
+"minizlib@2.1.2","MIT","https://github.com/isaacs/minizlib"
+"mkdirp@0.5.6","MIT","https://github.com/substack/node-mkdirp"
+"mkdirp@1.0.4","MIT","https://github.com/isaacs/node-mkdirp"
+"ms@2.0.0","MIT","https://github.com/zeit/ms"
+"ms@2.1.3","MIT","https://github.com/vercel/ms"
+"negotiator@0.6.4","MIT","https://github.com/jshttp/negotiator"
+"nice-try@1.0.5","MIT","https://github.com/electerious/nice-try"
+"node-abi@3.75.0","MIT","https://github.com/electron/node-abi"
+"node-api-version@0.2.1","MIT","https://github.com/timfish/node-api-version"
+"node-fetch@2.7.0","MIT","https://github.com/bitinn/node-fetch"
+"nopt@4.0.3","ISC","https://github.com/npm/nopt"
+"nopt@6.0.0","ISC","https://github.com/npm/nopt"
+"normalize-package-data@2.5.0","BSD-2-Clause","https://github.com/npm/normalize-package-data"
+"normalize-url@6.1.0","MIT","https://github.com/sindresorhus/normalize-url"
+"npm-normalize-package-bin@1.0.1","ISC","https://github.com/npm/npm-normalize-package-bin"
+"npm-run-path@2.0.2","MIT","https://github.com/sindresorhus/npm-run-path"
+"object-keys@1.1.1","MIT","https://github.com/ljharb/object-keys"
+"once@1.4.0","ISC","https://github.com/isaacs/once"
+"onetime@5.1.2","MIT","https://github.com/sindresorhus/onetime"
+"ora@5.4.1","MIT","https://github.com/sindresorhus/ora"
+"os-homedir@1.0.2","MIT","https://github.com/sindresorhus/os-homedir"
+"os-tmpdir@1.0.2","MIT","https://github.com/sindresorhus/os-tmpdir"
+"osenv@0.1.5","ISC","https://github.com/npm/osenv"
+"p-cancelable@2.1.1","MIT","https://github.com/sindresorhus/p-cancelable"
+"p-defer@1.0.0","MIT","https://github.com/sindresorhus/p-defer"
+"p-finally@1.0.0","MIT","https://github.com/sindresorhus/p-finally"
+"p-is-promise@2.1.0","MIT","https://github.com/sindresorhus/p-is-promise"
+"p-limit@1.3.0","MIT","https://github.com/sindresorhus/p-limit"
+"p-limit@3.1.0","MIT","https://github.com/sindresorhus/p-limit"
+"p-locate@2.0.0","MIT","https://github.com/sindresorhus/p-locate"
+"p-locate@5.0.0","MIT","https://github.com/sindresorhus/p-locate"
+"p-map@4.0.0","MIT","https://github.com/sindresorhus/p-map"
+"p-try@1.0.0","MIT","https://github.com/sindresorhus/p-try"
+"parse-author@2.0.0","MIT","https://github.com/jonschlinkert/parse-author"
+"parse-json@2.2.0","MIT","https://github.com/sindresorhus/parse-json"
+"path-exists@3.0.0","MIT","https://github.com/sindresorhus/path-exists"
+"path-exists@4.0.0","MIT","https://github.com/sindresorhus/path-exists"
+"path-is-absolute@1.0.1","MIT","https://github.com/sindresorhus/path-is-absolute"
+"path-key@2.0.1","MIT","https://github.com/sindresorhus/path-key"
+"path-key@3.1.1","MIT","https://github.com/sindresorhus/path-key"
+"path-parse@1.0.7","MIT","https://github.com/jbgutierrez/path-parse"
+"path-type@2.0.0","MIT","https://github.com/sindresorhus/path-type"
+"pe-library@1.0.1","MIT","https://github.com/jet2jet/pe-library-js"
+"pend@1.2.0","MIT","https://github.com/andrewrk/node-pend"
+"picomatch@2.3.1","MIT","https://github.com/micromatch/picomatch"
+"pify@2.3.0","MIT","https://github.com/sindresorhus/pify"
+"plist@3.1.0","MIT","https://github.com/TooTallNate/node-plist"
+"postject@1.0.0-alpha.6","MIT","https://github.com/nodejs/postject"
+"proc-log@2.0.1","ISC","https://github.com/npm/proc-log"
+"progress@2.0.3","MIT","https://github.com/visionmedia/node-progress"
+"promise-inflight@1.0.1","ISC","https://github.com/iarna/promise-inflight"
+"promise-retry@2.0.1","MIT","https://github.com/IndigoUnited/node-promise-retry"
+"pump@3.0.3","MIT","https://github.com/mafintosh/pump"
+"queue-microtask@1.2.3","MIT","https://github.com/feross/queue-microtask"
+"quick-lru@5.1.1","MIT","https://github.com/sindresorhus/quick-lru"
+"read-binary-file-arch@1.0.6","MIT","https://github.com/samuelmaddock/read-binary-file-arch"
+"read-installed@4.0.3","ISC","https://github.com/isaacs/read-installed"
+"read-package-json@2.1.2","ISC","https://github.com/npm/read-package-json"
+"read-pkg-up@2.0.0","MIT","https://github.com/sindresorhus/read-pkg-up"
+"read-pkg@2.0.0","MIT","https://github.com/sindresorhus/read-pkg"
+"readable-stream@3.6.2","MIT","https://github.com/nodejs/readable-stream"
+"readdir-scoped-modules@1.1.0","ISC","https://github.com/npm/readdir-scoped-modules"
+"rechoir@0.8.0","MIT","https://github.com/gulpjs/rechoir"
+"require-directory@2.1.1","MIT","https://github.com/troygoode/node-require-directory"
+"resedit@2.0.3","MIT","https://github.com/jet2jet/resedit-js"
+"resolve-alpn@1.2.1","MIT","https://github.com/szmarczak/resolve-alpn"
+"resolve@1.22.10","MIT","https://github.com/browserify/resolve"
+"responselike@2.0.1","MIT","https://github.com/sindresorhus/responselike"
+"restore-cursor@3.1.0","MIT","https://github.com/sindresorhus/restore-cursor"
+"restore-cursor@4.0.0","MIT","https://github.com/sindresorhus/restore-cursor"
+"retry@0.12.0","MIT","https://github.com/tim-kos/node-retry"
+"reusify@1.1.0","MIT","https://github.com/mcollina/reusify"
+"rfdc@1.4.1","MIT","https://github.com/davidmarkclements/rfdc"
+"rimraf@2.6.3","ISC","https://github.com/isaacs/rimraf"
+"rimraf@3.0.2","ISC","https://github.com/isaacs/rimraf"
+"roarr@2.15.4","BSD-3-Clause","https://github.com/gajus/roarr"
+"run-parallel@1.2.0","MIT","https://github.com/feross/run-parallel"
+"safe-buffer@5.2.1","MIT","https://github.com/feross/safe-buffer"
+"safer-buffer@2.1.2","MIT","https://github.com/ChALkeR/safer-buffer"
+"semver-compare@1.0.0","MIT","https://github.com/substack/semver-compare"
+"semver@5.7.2","ISC","https://github.com/npm/node-semver"
+"semver@6.3.1","ISC","https://github.com/npm/node-semver"
+"semver@7.7.2","ISC","https://github.com/npm/node-semver"
+"serialize-error@7.0.1","MIT","https://github.com/sindresorhus/serialize-error"
+"shebang-command@1.2.0","MIT","https://github.com/kevva/shebang-command"
+"shebang-command@2.0.0","MIT","https://github.com/kevva/shebang-command"
+"shebang-regex@1.0.0","MIT","https://github.com/sindresorhus/shebang-regex"
+"shebang-regex@3.0.0","MIT","https://github.com/sindresorhus/shebang-regex"
+"signal-exit@3.0.7","ISC","https://github.com/tapjs/signal-exit"
+"slice-ansi@5.0.0","MIT","https://github.com/chalk/slice-ansi"
+"slide@1.1.6","ISC","https://github.com/isaacs/slide-flow-control"
+"smart-buffer@4.2.0","MIT","https://github.com/JoshGlazebrook/smart-buffer"
+"socks-proxy-agent@7.0.0","MIT","https://github.com/TooTallNate/node-socks-proxy-agent"
+"socks@2.8.5","MIT","https://github.com/JoshGlazebrook/socks"
+"source-map-support@0.5.21","MIT","https://github.com/evanw/node-source-map-support"
+"source-map@0.6.1","BSD-3-Clause","https://github.com/mozilla/source-map"
+"spdx-compare@1.0.0","MIT","https://github.com/kemitchell/spdx-compare.js"
+"spdx-correct@3.2.0","Apache-2.0","https://github.com/jslicense/spdx-correct.js"
+"spdx-exceptions@2.5.0","CC-BY-3.0","https://github.com/kemitchell/spdx-exceptions.json"
+"spdx-expression-parse@3.0.1","MIT","https://github.com/jslicense/spdx-expression-parse.js"
+"spdx-license-ids@3.0.21","CC0-1.0","https://github.com/jslicense/spdx-license-ids"
+"spdx-ranges@2.1.1","(MIT AND CC-BY-3.0)","https://github.com/kemitchell/spdx-ranges.js"
+"spdx-satisfies@4.0.1","MIT","https://github.com/kemitchell/spdx-satisfies.js"
+"sprintf-js@1.1.3","BSD-3-Clause","https://github.com/alexei/sprintf.js"
+"ssri@9.0.1","ISC","https://github.com/npm/ssri"
+"string-width@4.2.3","MIT","https://github.com/sindresorhus/string-width"
+"string-width@5.1.2","MIT","https://github.com/sindresorhus/string-width"
+"string_decoder@1.3.0","MIT","https://github.com/nodejs/string_decoder"
+"strip-ansi@6.0.1","MIT","https://github.com/chalk/strip-ansi"
+"strip-ansi@7.1.0","MIT","https://github.com/chalk/strip-ansi"
+"strip-bom@3.0.0","MIT","https://github.com/sindresorhus/strip-bom"
+"strip-eof@1.0.0","MIT","https://github.com/sindresorhus/strip-eof"
+"strip-outer@1.0.1","MIT","https://github.com/sindresorhus/strip-outer"
+"sudo-prompt@9.2.1","MIT","https://github.com/jorangreef/sudo-prompt"
+"sumchecker@3.0.1","Apache-2.0","https://github.com/malept/sumchecker"
+"supports-color@5.5.0","MIT","https://github.com/chalk/supports-color"
+"supports-color@7.2.0","MIT","https://github.com/chalk/supports-color"
+"supports-preserve-symlinks-flag@1.0.0","MIT","https://github.com/inspect-js/node-supports-preserve-symlinks-flag"
+"tar@6.2.1","ISC","https://github.com/isaacs/node-tar"
+"temp@0.9.4","MIT","https://github.com/bruce/node-temp"
+"tmp-promise@3.0.3","MIT","https://github.com/benjamingr/tmp-promise"
+"tmp@0.2.3","MIT","https://github.com/raszi/node-tmp"
+"to-regex-range@5.0.1","MIT","https://github.com/micromatch/to-regex-range"
+"tr46@0.0.3","MIT","https://github.com/Sebmaster/tr46.js"
+"treeify@1.1.0","MIT","https://github.com/notatestuser/treeify"
+"trim-repeated@1.0.0","MIT","https://github.com/sindresorhus/trim-repeated"
+"type-fest@0.13.1","(MIT OR CC0-1.0)","https://github.com/sindresorhus/type-fest"
+"type-fest@1.4.0","(MIT OR CC0-1.0)","https://github.com/sindresorhus/type-fest"
+"undici-types@6.21.0","MIT","https://github.com/nodejs/undici"
+"unique-filename@2.0.1","ISC","https://github.com/npm/unique-filename"
+"unique-slug@3.0.0","ISC","https://github.com/npm/unique-slug"
+"universalify@0.1.2","MIT","https://github.com/RyanZim/universalify"
+"universalify@2.0.1","MIT","https://github.com/RyanZim/universalify"
+"username@5.1.0","MIT","https://github.com/sindresorhus/username"
+"util-deprecate@1.0.2","MIT","https://github.com/TooTallNate/util-deprecate"
+"util-extend@1.0.3","MIT","https://github.com/isaacs/util-extend"
+"validate-npm-package-license@3.0.4","Apache-2.0","https://github.com/kemitchell/validate-npm-package-license.js"
+"wcwidth@1.0.1","MIT","https://github.com/timoxley/wcwidth"
+"webidl-conversions@3.0.1","BSD-2-Clause","https://github.com/jsdom/webidl-conversions"
+"whatwg-url@5.0.0","MIT","https://github.com/jsdom/whatwg-url"
+"which@1.3.1","ISC","https://github.com/isaacs/node-which"
+"which@2.0.2","ISC","https://github.com/isaacs/node-which"
+"word-wrap@1.2.5","MIT","https://github.com/jonschlinkert/word-wrap"
+"wrap-ansi@7.0.0","MIT","https://github.com/chalk/wrap-ansi"
+"wrap-ansi@8.1.0","MIT","https://github.com/chalk/wrap-ansi"
+"wrappy@1.0.2","ISC","https://github.com/npm/wrappy"
+"xmlbuilder@15.1.1","MIT","https://github.com/oozcitak/xmlbuilder-js"
+"y18n@5.0.8","ISC","https://github.com/yargs/y18n"
+"yallist@4.0.0","ISC","https://github.com/isaacs/yallist"
+"yargs-parser@21.1.1","ISC","https://github.com/yargs/yargs-parser"
+"yargs@17.7.2","MIT","https://github.com/yargs/yargs"
+"yauzl@2.10.0","MIT","https://github.com/thejoshwolfe/yauzl"
+"yocto-queue@0.1.0","MIT","https://github.com/sindresorhus/yocto-queue"
+
+
+
+
+
+
+
+
+最後に、以下にここまでで出てきたライセンスの条文を記載しておきます。
+<MITライセンス>
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
+
+<2条項BSDライセンス>
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+
+1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+
+2. Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS “AS IS” AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+<3条項BSDライセンス>
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+
+Redistributions of source code must retain the above copyright notice,
+this list of conditions and the following disclaimer.
+
+Redistributions in binary form must reproduce the above copyright notice,
+this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+
+Neither the name of the <organization> nor the names of its contributors
+may be used to endorse or promote products derived from this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL <COPYRIGHT HOLDER> BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+<ISCライセンス>
+Permission to use, copy, modify, and/or distribute this software for any purpose with or without fee is hereby granted, provided that the above copyright notice and this permission notice appear in all copies.
+
+THE SOFTWARE IS PROVIDED “AS IS” AND ISC DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS. IN NO EVENT SHALL ISC BE LIABLE FOR ANY SPECIAL, DIRECT, INDIRECT, OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+<Apacheライセンス>
+TERMS AND CONDITIONS FOR USE, REPRODUCTION, AND DISTRIBUTION
+
+   1. Definitions.
+
+      "License" shall mean the terms and conditions for use, reproduction,
+      and distribution as defined by Sections 1 through 9 of this document.
+
+      "Licensor" shall mean the copyright owner or entity authorized by
+      the copyright owner that is granting the License.
+
+      "Legal Entity" shall mean the union of the acting entity and all
+      other entities that control, are controlled by, or are under common
+      control with that entity. For the purposes of this definition,
+      "control" means (i) the power, direct or indirect, to cause the
+      direction or management of such entity, whether by contract or
+      otherwise, or (ii) ownership of fifty percent (50%) or more of the
+      outstanding shares, or (iii) beneficial ownership of such entity.
+
+      "You" (or "Your") shall mean an individual or Legal Entity
+      exercising permissions granted by this License.
+
+      "Source" form shall mean the preferred form for making modifications,
+      including but not limited to software source code, documentation
+      source, and configuration files.
+
+      "Object" form shall mean any form resulting from mechanical
+      transformation or translation of a Source form, including but
+      not limited to compiled object code, generated documentation,
+      and conversions to other media types.
+
+      "Work" shall mean the work of authorship, whether in Source or
+      Object form, made available under the License, as indicated by a
+      copyright notice that is included in or attached to the work
+      (an example is provided in the Appendix below).
+
+      "Derivative Works" shall mean any work, whether in Source or Object
+      form, that is based on (or derived from) the Work and for which the
+      editorial revisions, annotations, elaborations, or other modifications
+      represent, as a whole, an original work of authorship. For the purposes
+      of this License, Derivative Works shall not include works that remain
+      separable from, or merely link (or bind by name) to the interfaces of,
+      the Work and Derivative Works thereof.
+
+      "Contribution" shall mean any work of authorship, including
+      the original version of the Work and any modifications or additions
+      to that Work or Derivative Works thereof, that is intentionally
+      submitted to Licensor for inclusion in the Work by the copyright owner
+      or by an individual or Legal Entity authorized to submit on behalf of
+      the copyright owner. For the purposes of this definition, "submitted"
+      means any form of electronic, verbal, or written communication sent
+      to the Licensor or its representatives, including but not limited to
+      communication on electronic mailing lists, source code control systems,
+      and issue tracking systems that are managed by, or on behalf of, the
+      Licensor for the purpose of discussing and improving the Work, but
+      excluding communication that is conspicuously marked or otherwise
+      designated in writing by the copyright owner as "Not a Contribution."
+
+      "Contributor" shall mean Licensor and any individual or Legal Entity
+      on behalf of whom a Contribution has been received by Licensor and
+      subsequently incorporated within the Work.
+
+   2. Grant of Copyright License. Subject to the terms and conditions of
+      this License, each Contributor hereby grants to You a perpetual,
+      worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+      copyright license to reproduce, prepare Derivative Works of,
+      publicly display, publicly perform, sublicense, and distribute the
+      Work and such Derivative Works in Source or Object form.
+
+   3. Grant of Patent License. Subject to the terms and conditions of
+      this License, each Contributor hereby grants to You a perpetual,
+      worldwide, non-exclusive, no-charge, royalty-free, irrevocable
+      (except as stated in this section) patent license to make, have made,
+      use, offer to sell, sell, import, and otherwise transfer the Work,
+      where such license applies only to those patent claims licensable
+      by such Contributor that are necessarily infringed by their
+      Contribution(s) alone or by combination of their Contribution(s)
+      with the Work to which such Contribution(s) was submitted. If You
+      institute patent litigation against any entity (including a
+      cross-claim or counterclaim in a lawsuit) alleging that the Work
+      or a Contribution incorporated within the Work constitutes direct
+      or contributory patent infringement, then any patent licenses
+      granted to You under this License for that Work shall terminate
+      as of the date such litigation is filed.
+
+   4. Redistribution. You may reproduce and distribute copies of the
+      Work or Derivative Works thereof in any medium, with or without
+      modifications, and in Source or Object form, provided that You
+      meet the following conditions:
+
+      (a) You must give any other recipients of the Work or
+          Derivative Works a copy of this License; and
+
+      (b) You must cause any modified files to carry prominent notices
+          stating that You changed the files; and
+
+      (c) You must retain, in the Source form of any Derivative Works
+          that You distribute, all copyright, patent, trademark, and
+          attribution notices from the Source form of the Work,
+          excluding those notices that do not pertain to any part of
+          the Derivative Works; and
+
+      (d) If the Work includes a "NOTICE" text file as part of its
+          distribution, then any Derivative Works that You distribute must
+          include a readable copy of the attribution notices contained
+          within such NOTICE file, excluding those notices that do not
+          pertain to any part of the Derivative Works, in at least one
+          of the following places: within a NOTICE text file distributed
+          as part of the Derivative Works; within the Source form or
+          documentation, if provided along with the Derivative Works; or,
+          within a display generated by the Derivative Works, if and
+          wherever such third-party notices normally appear. The contents
+          of the NOTICE file are for informational purposes only and
+          do not modify the License. You may add Your own attribution
+          notices within Derivative Works that You distribute, alongside
+          or as an addendum to the NOTICE text from the Work, provided
+          that such additional attribution notices cannot be construed
+          as modifying the License.
+
+      You may add Your own copyright statement to Your modifications and
+      may provide additional or different license terms and conditions
+      for use, reproduction, or distribution of Your modifications, or
+      for any such Derivative Works as a whole, provided Your use,
+      reproduction, and distribution of the Work otherwise complies with
+      the conditions stated in this License.
+
+   5. Submission of Contributions. Unless You explicitly state otherwise,
+      any Contribution intentionally submitted for inclusion in the Work
+      by You to the Licensor shall be under the terms and conditions of
+      this License, without any additional terms or conditions.
+      Notwithstanding the above, nothing herein shall supersede or modify
+      the terms of any separate license agreement you may have executed
+      with Licensor regarding such Contributions.
+
+   6. Trademarks. This License does not grant permission to use the trade
+      names, trademarks, service marks, or product names of the Licensor,
+      except as required for reasonable and customary use in describing the
+      origin of the Work and reproducing the content of the NOTICE file.
+
+   7. Disclaimer of Warranty. Unless required by applicable law or
+      agreed to in writing, Licensor provides the Work (and each
+      Contributor provides its Contributions) on an "AS IS" BASIS,
+      WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or
+      implied, including, without limitation, any warranties or conditions
+      of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A
+      PARTICULAR PURPOSE. You are solely responsible for determining the
+      appropriateness of using or redistributing the Work and assume any
+      risks associated with Your exercise of permissions under this License.
+
+   8. Limitation of Liability. In no event and under no legal theory,
+      whether in tort (including negligence), contract, or otherwise,
+      unless required by applicable law (such as deliberate and grossly
+      negligent acts) or agreed to in writing, shall any Contributor be
+      liable to You for damages, including any direct, indirect, special,
+      incidental, or consequential damages of any character arising as a
+      result of this License or out of the use or inability to use the
+      Work (including but not limited to damages for loss of goodwill,
+      work stoppage, computer failure or malfunction, or any and all
+      other commercial damages or losses), even if such Contributor
+      has been advised of the possibility of such damages.
+
+   9. Accepting Warranty or Additional Liability. While redistributing
+      the Work or Derivative Works thereof, You may choose to offer,
+      and charge a fee for, acceptance of support, warranty, indemnity,
+      or other liability obligations and/or rights consistent with this
+      License. However, in accepting such obligations, You may act only
+      on Your own behalf and on Your sole responsibility, not on behalf
+      of any other Contributor, and only if You agree to indemnify,
+      defend, and hold each Contributor harmless for any liability
+      incurred by, or claims asserted against, such Contributor by reason
+      of your accepting any such warranty or additional liability.
+
+   END OF TERMS AND CONDITIONS
+
+   APPENDIX: How to apply the Apache License to your work.
+
+      To apply the Apache License to your work, attach the following
+      boilerplate notice, with the fields enclosed by brackets "[]"
+      replaced with your own identifying information. (Don't include
+      the brackets!)  The text should be enclosed in the appropriate
+      comment syntax for the file format. We also recommend that a
+      file or class name and description of purpose be included on the
+      same "printed page" as the copyright notice for easier
+      identification within third-party archives.
+
+   Copyright [yyyy] [name of copyright owner]
+
+   Licensed under the Apache License, Version 2.0 (the "License");
+   you may not use this file except in compliance with the License.
+   You may obtain a copy of the License at
+
+       http://www.apache.org/licenses/LICENSE-2.0
+
+   Unless required by applicable law or agreed to in writing, software
+   distributed under the License is distributed on an "AS IS" BASIS,
+   WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+   See the License for the specific language governing permissions and
+   limitations under the License.
+
+<by-cc3.0ライセンス>
+You are free to:
+Share — copy and redistribute the material in any medium or format for any purpose, even commercially.
+Adapt — remix, transform, and build upon the material for any purpose, even commercially.
+The licensor cannot revoke these freedoms as long as you follow the license terms.
+Under the following terms:
+Attribution — You must give appropriate credit , provide a link to the license, and indicate if changes were made . You may do so in any reasonable manner, but not in any way that suggests the licensor endorses you or your use.
+No additional restrictions — You may not apply legal terms or technological measures that legally restrict others from doing anything the license permits.
+Notices:
+You do not have to comply with the license for elements of the material in the public domain or where your use is permitted by an applicable exception or limitation .
+
+No warranties are given. The license may not give you all of the permissions necessary for your intended use. For example, other rights such as publicity, privacy, or moral rights may limit how you use the material.
+
+<CC0-1.0ライセンス>
+“No Rights Reserved”
+CC0
+CC0 enables scientists, educators, artists and other creators and owners of copyright- or database-protected content to waive those interests in their works and thereby place them as completely as possible in the public domain, so that others may freely build upon, enhance and reuse the works for any purposes without restriction under copyright or database law.
+
+In contrast to CC’s licenses that allow copyright holders to choose from a range of permissions while retaining their copyright, CC0 empowers yet another choice altogether – the choice to opt out of copyright and database protection, and the exclusive rights automatically granted to creators – the “no rights reserved” alternative to our licenses.
+
+The Problem
+Dedicating works to the public domain is difficult if not impossible for those wanting to contribute their works for public use before applicable copyright or database protection terms expire. Few if any jurisdictions have a process for doing so easily and reliably. Laws vary from jurisdiction to jurisdiction as to what rights are automatically granted and how and when they expire or may be voluntarily relinquished. More challenging yet, many legal systems effectively prohibit any attempt by these owners to surrender rights automatically conferred by law, particularly moral rights, even when the author wishing to do so is well informed and resolute about doing so and contributing their work to the public domain.
+
+A Solution
+CC0 helps solve this problem by giving creators a way to waive all their copyright and related rights in their works to the fullest extent allowed by law. CC0 is a universal instrument that is not adapted to the laws of any particular legal jurisdiction, similar to many open source software licenses. And while no tool, not even CC0, can guarantee a complete relinquishment of all copyright and database rights in every jurisdiction, we believe it provides the best and most complete alternative for contributing a work to the public domain given the many complex and diverse copyright and database systems around the world.
+
+Using CC0
+Unlike the Public Domain Mark, CC0 should not be used to mark works already free of known copyright and database restrictions and in the public domain throughout the world. However, it can be used to waive copyright and database rights to the extent you may have these rights in your work under the laws of at least one jurisdiction, even if your work is free of restrictions in others. Doing so clarifies the status of your work unambiguously worldwide and facilitates reuse.
+
+You should only apply CC0 to your own work, unless you have the necessary rights to apply CC0 to another person’s work.
+
+Examples
+Europeana — Europe’s digital library — releases its metadata into the public domain using CC0. This massive dataset consists of descriptive information from a huge trove of digitized cultural and artistic works. By removing all restrictions on the use of the metadata that describes these cultural works, Europeana creates opportunities for developers, designers, and other digital innovators to create applications, games for mobile devices, and websites that visualize and represent the diverse collection of artistic works in Europeana. See Europeana releases 20 million records into the public domain using CC0.
+figshare allows researchers to publish all of their research outputs in an easily citable, searchable, shareable manner. Figshare has adopted CC0 as the default tool for researchers to share their datasets. In many cases, it can be difficult to ascertain whether a database is subject to copyright law, as many types of data aren’t copyrightable in many jurisdictions. Putting a database or dataset in the public domain under CC0 is a way to remove any legal doubt about whether researchers can use the data in their projects. Hundreds of organizations use CC0 to dedicate their work to the public domain. Although CC0 doesn’t legally require users of the data to cite the source, it does not affect the ethical norms for attribution in scientific and research communities.
+Open Goldberg Variations: Before the Open Goldberg Variations, public domain recordings of Bach’s Goldberg Variations were hard to find, even though the scores themselves were in the public domain. Open Goldberg Variations wanted to change that, so it teamed up with professional musician Kimiko Ishizaka and started a Kickstarter project to create studio-quality recordings, promising to release them into the public domain using the CC0 public domain dedication tool. According to the project founders, “Musicians are usually not willing to withdraw their copyrights and their control over usage, but we feel that they thus miss opportunities to contribute to the greater good and benefit from wider distribution of their works. If this project succeeds, we hope that the recording will be available to everyone forevermore, and that it will be a truly widely known and enjoyed artistic work.” Sure enough, the project was funded at nearly double its original funding goal, and as a result all 30 variations performed by Kimiko Ishizaka are now available for free download via CC0.
+Metropolitan Museum of Art: All public domain images in its collection are shared under CC0, which expanded their digital collection by over 375,000 images as well as provided data on over 420,000 museum objects spanning more than 5,000 years. Through the power of the commons, billions of people are now able to enjoy the beauty of the Met’s collections as well as participate in the continued growth of the commons, utilizing the infrastructure that makes greater collaboration possible.
+            </p>
+        </div>
+    </body>
+</html>
